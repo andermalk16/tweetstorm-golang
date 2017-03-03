@@ -26,5 +26,5 @@ Download this repository
     * export TWITTER_ACCESS_SECRET="{your_token}"
 
 2. Now, you can use it like this:
-   `tweetstorm "Go (often referred to as golang) is a free and open source programming language created at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson. It is a compiled, statically typed language in the tradition of Algol and C, with garbage collection, limited structural typing, memory safety features and CSP-style concurrent programming features added."
+   `tweetstorm "<TEXT>"
 ` where it will tweet the value of the command line argument.
