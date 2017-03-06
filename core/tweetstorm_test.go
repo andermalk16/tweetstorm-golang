@@ -3,7 +3,7 @@ package tweetstorm_test
 import (
 	"testing"
 
-	"github.com/andermalk16/tweetstorm"
+	tweetstorm "github.com/andermalk16/tweetstorm/core"
 	"github.com/stretchr/testify/mock"
 )
 

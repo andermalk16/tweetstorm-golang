@@ -3,17 +3,8 @@ package tweetstorm
 import (
 	"fmt"
 	"log"
-	"os"
 	"strings"
 )
-
-func main() {
-
-	text := os.Args[1]
-	api := TwiterAPI{}
-	Storm(text, api)
-
-}
 
 //Storm creates tweetstorm
 func Storm(text string, api TwiterAPIer) {
