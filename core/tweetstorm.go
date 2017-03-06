@@ -30,9 +30,10 @@ func GenerateTweetsText(text string) []string {
 	for index := 0; index < len(words); index++ {
 
 		beforeAddWord = strings.TrimSpace(tweet)
-		afterAddWord = fmt.Sprintf(" %s %s ", strings.TrimSpace(tweet), strings.TrimSpace(words[index]))
+		afterAddWord = fmt.Sprintf("%s %s ", strings.TrimSpace(tweet), strings.TrimSpace(words[index]))
 
-		if len(afterAddWord) > letterLimit {
+		size := len([]rune(afterAddWord))
+		if size > letterLimit {
 			tweets = append(tweets, beforeAddWord)
 			tweet = words[index] + " "
 		} else {
